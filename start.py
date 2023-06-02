@@ -8,5 +8,3 @@ with urllib.request.urlopen(url) as response:
 # Write the HTML content to a file
 with open('output.html', 'w') as file:
     file.write(html_content)
-
-print("HTML file saved as output.html")
