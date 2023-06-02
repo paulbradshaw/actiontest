@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
-            - run: python start.py > page.html
+            - run: python start.py > %date%.html
             - run: |-
                   git config user.name 'GitHub Actions'
                   git config user.email 'actions@users.noreply.github.com'
